@@ -1,26 +1,39 @@
 {
-	"name": "file_metadata",
-	"version": "0.0.1",
-	"description": "API project for freeCodeCamp",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"dependencies": {
-		"express": "^5.0.0-alpha.2",
-		"cors": "^2.8.1"
-	},
-	"engines": {
-		"node": "4.4.5"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://hyperdev.com/#!/project/welcome-project"
-	},
-	"keywords": [
-		"node",
-		"hyperdev",
-		"express"
-	],
-	"license": "MIT"
+  "name": "fcc-exercise-tracker",
+  "version": "0.1.0",
+  "description": "A REST API project, part of Free Code Camp's curriculum",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --experimental-modules server.js",
+    "test": "NODE_ENV=test c8 mocha"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "c8": "^5.0.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "mocha": "^6.1.4",
+    "reify": "^0.20.12",
+    "sinon": "^7.3.2",
+    "sinon-chai": "^3.3.0"
+  },
+  "engines": {
+    "node": "12.3.0"
+  },
+  "repository": {
+    "url": "https://github.com/SkipHendriks/FileMetadata-FreeCodeCamp"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "type": "module"
 }
