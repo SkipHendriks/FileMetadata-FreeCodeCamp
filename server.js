@@ -5,7 +5,7 @@ import multer from 'multer';
 import errorHandler from './middleware/error-handler.js';
 import notFoundHandler from './middleware/not-found.js';
 
-const upload = multer({ dest: 'uploads/' });
+const upload = multer();
 
 const app = express();
 
